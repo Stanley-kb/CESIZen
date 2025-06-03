@@ -1,0 +1,153 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Railey&display=swap');
+@font-face {
+    font-family: 'Railey';
+    src: url('/fonts/Railey-PersonalUse.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.createBody {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdb00;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Layout principal */
+.createPage {
+    display: flex;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+/* Titre */
+.createTitle {
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-size: 2rem;
+    color: #437004;
+    /* text-align: center; */
+    /* margin: 1rem auto; */
+    /* border: solid 1px #000000; */
+}
+
+.bigTitle {
+    /* font-size: 2rem; */
+    background-color: #fafbf9;
+    opacity: 0.7;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 50px;
+}
+.secondTitle h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 5rem;
+    /* border: solid 1px red; */
+    font-weight: bold;
+    font-size: 2rem;
+}
+.secondTitle h3 {
+    font-family: 'Railey', sans-serif;
+    font-weight: bold;
+    padding-left: 5rem;
+    margin-top: 0;
+    /* border: solid 1px red; */
+    font-family: 'Railey', cursive;
+    font-size: 2rem;
+}
+/* Partie image */
+.imgCreatePage {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    /* border: solid 1px red; */
+    margin-right: 50px;
+}
+
+.imgCreatePage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Partie formulaire */
+.containerForm {
+    width: 60%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    /* border: solid 1px #000000; */
+
+}
+
+/* Formulaire */
+.containerForm form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    /* border: solid 1px red; */
+
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    color: #437004;
+    font-weight: bold;
+    /* border: solid 1px #000000; */
+
+}
+
+.inputCreate {
+    padding: 19px;
+    border-radius: 8px;
+    /* border: 1px solid #ccc; */
+    opacity: 0.8;
+    font-size: 1.3rem;
+    
+}
+
+.buttonCreate {
+    background-color: #437004;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonCreate:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1080px) {
+    .createPage {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imgCreatePage {
+        display: none;
+    }
+
+    .containerForm {
+        width: 100%;
+        padding: 2rem;
+    }
+}

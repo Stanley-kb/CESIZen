@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}CESIZen{% endblock %}</title>
+        {# <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet"> #}
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/creationDeCompte.css">
+    </head>
+    <body class="{% block body_class %}{% endblock %}">
+        {% include 'header.html.twig' %}
+
+        {% block body %}{% endblock %}
+
+        {% include 'footer.html.twig' %}
+    </body>
+</html>
